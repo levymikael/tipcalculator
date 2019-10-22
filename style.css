@@ -1,0 +1,68 @@
+body {
+    background-color: grey;
+    font-family: 'Ubuntu', sans-serif;
+    color: aliceblue;
+    margin: 0;
+}
+
+#main {
+    margin: 10%;
+    border: 1px black solid
+}
+
+#tip {
+    text-align: center;
+    margin: 15px;
+    font-size: x-large;
+    color: white
+}
+
+input,
+#qualityservice {
+    margin-top: 1%;
+    margin-left: 5%;
+    padding-left: 15px;
+    border-radius: 10px;
+}
+
+::placeholder {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    margin-left: 20px;
+}
+
+button {
+    background-color: coral;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    text-align: center;
+}
+
+#button-wrapper {
+    margin-top: 7%;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}

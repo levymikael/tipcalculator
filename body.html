@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type='text/css' href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="logic.js">
+    </script>
+    <title>Tip Calculator</title>
+</head>
+
+<body>
+    <div id='main'>
+        <div>
+            <h2>Tip Calculator</h2>
+            <h3>How much was your bill ?</h3>
+            <input type="text" pattern="\d+(\.\d{2})?" required id="billamount" placeholder="Bill amount" />
+            <h3>How was your service ?</h3>
+            <select id="qualityservice">
+                <option hidden value="">--Choose an option--</option>
+                <option value="2">Horrible ! - 2%</option>
+                <option value="5">Correct - 5 %</option>
+                <option value="10">Great - 10 %</option>
+                <option value="15">Amazing! - 15 %</option>
+            </select>
+            <h3>How many people are sharing the bill ?</h3>
+            <input type="text" placeholder="Number of people" required id="peopleamount" pattern="[0-9]" />
+        </div>
+        <div id='button-wrapper'>
+            <button id='calculate'>Calculate</button>
+        </div>
+    </div>
+</body>
+
+</html>
